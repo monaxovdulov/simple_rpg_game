@@ -7,10 +7,22 @@ hero_hp = 100
 hero_damage = 9
 hero_level = 1
 
-monster1_hp = 50
-monster1_damage = 10
-monster1_lvl = 1
 monster1_rarity = random.choice(possible_rarity)
+
+if monster1_rarity == "обычный":
+    monster1_hp = 50
+    monster1_damage = 10
+    monster1_lvl = 1
+
+if monster1_rarity == "редкий":
+    monster1_hp = 80
+    monster1_damage = 15
+    monster1_lvl = 2
+
+if monster1_rarity == "легендарный":
+    monster1_hp = 100
+    monster1_damage = 30
+    monster1_lvl = 3
 
 print("Вы встретили монстра и он", monster1_rarity, "уровень", hero_level)
 
